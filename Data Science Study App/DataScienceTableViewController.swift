@@ -15,7 +15,13 @@ class DataScienceTableViewController: UITableViewController {
 
     }
     
-    var concept: [String] = ["Supervised Learning", "Unsupervised Learning"]
+    var concept: [String] = ["Data Preparation",
+                             "Statistics Primer",
+                             "Unsupervised Learning",
+                             "Supervised Learning",
+                             "Unsupervised Learning",
+                             "Deep Learning",
+                             "Model Validation"]
 
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
