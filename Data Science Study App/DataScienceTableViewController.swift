@@ -46,7 +46,7 @@ class DataScienceTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let defVC = segue.destination as! definitionViewControler
-        defVC.definition = sender as! String
+        defVC.conceptTitle = sender as! String
     }
 
 }

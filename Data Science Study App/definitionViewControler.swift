@@ -11,12 +11,19 @@ import UIKit
 class definitionViewControler: UIViewController {
     
     @IBOutlet weak var conceptLabel: UILabel!
-    var definition = ""
-
+    @IBOutlet weak var conceptDefinition: UILabel!
+    var conceptTitle = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-      conceptLabel.text = definition
+      conceptLabel.text = conceptTitle
+        
+        if conceptTitle == "Statistics Primer" {
+            conceptDefinition.text = "yes" }
+        else {
+            conceptDefinition.text = "nearly"
+        }
 
     }
     
