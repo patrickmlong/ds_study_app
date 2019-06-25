@@ -12,6 +12,7 @@
 		22A6B4C322C0DD7C00FFE32B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22A6B4C222C0DD7C00FFE32B /* Assets.xcassets */; };
 		22A6B4C622C0DD7C00FFE32B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A6B4C422C0DD7C00FFE32B /* LaunchScreen.storyboard */; };
 		22A6B4CE22C0E2DC00FFE32B /* DataScienceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A6B4CD22C0E2DC00FFE32B /* DataScienceTableViewController.swift */; };
+		22A6B4D222C1B95000FFE32B /* definitionViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A6B4D122C1B95000FFE32B /* definitionViewControler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		22A6B4C522C0DD7C00FFE32B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22A6B4C722C0DD7C00FFE32B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22A6B4CD22C0E2DC00FFE32B /* DataScienceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataScienceTableViewController.swift; sourceTree = "<group>"; };
+		22A6B4D122C1B95000FFE32B /* definitionViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = definitionViewControler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				22A6B4CD22C0E2DC00FFE32B /* DataScienceTableViewController.swift */,
+				22A6B4D122C1B95000FFE32B /* definitionViewControler.swift */,
 				22A6B4BB22C0DD7900FFE32B /* AppDelegate.swift */,
 				22A6B4BF22C0DD7900FFE32B /* Main.storyboard */,
 				22A6B4C222C0DD7C00FFE32B /* Assets.xcassets */,
@@ -137,6 +140,7 @@
 			files = (
 				22A6B4CE22C0E2DC00FFE32B /* DataScienceTableViewController.swift in Sources */,
 				22A6B4BC22C0DD7900FFE32B /* AppDelegate.swift in Sources */,
+				22A6B4D222C1B95000FFE32B /* definitionViewControler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

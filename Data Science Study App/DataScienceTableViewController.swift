@@ -15,8 +15,8 @@ class DataScienceTableViewController: UITableViewController {
 
     }
     
-    var concept: [String] = ["Data Preparation",
-                             "Statistics Primer",
+    var concepts: [String] = ["Statistics Primer",
+                             "Data Preparation",
                              "Unsupervised Learning",
                              "Supervised Learning",
                              "Unsupervised Learning",
@@ -26,20 +26,27 @@ class DataScienceTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return concept.count
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "ourSegue", sender: nil)
+        return concepts.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
         
-        cell.textLabel?.text = concept[indexPath.row]
-        
+        cell.textLabel?.text = concepts[indexPath.row]
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let concept = concepts[indexPath.row]
+        
+        performSegue(withIdentifier: "ourSegue", sender: concept)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let defVC = segue.destination as! definitionViewControler
+        defVC.definition = sender as! String
     }
 
 }

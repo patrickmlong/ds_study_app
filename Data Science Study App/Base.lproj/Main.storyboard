@@ -52,19 +52,19 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NhK-AH-wxs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="647.20000000000005" y="-1162.6686656671666"/>
+            <point key="canvasLocation" x="463" y="-1163"/>
         </scene>
-        <!--View Controller-->
+        <!--Definition View Controler-->
         <scene sceneID="zBd-8a-WaN">
             <objects>
-                <viewController id="dqh-ff-v1W" sceneMemberID="viewController">
-                    <view key="view" tag="-1" contentMode="scaleToFill" id="Va0-Zk-SYf">
+                <viewController id="dqh-ff-v1W" customClass="definitionViewControler" customModule="Data_Science_Study_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" tag="-1" contentMode="scaleToFill" id="Va0-Zk-SYf" customClass="definition">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🐕" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWG-iT-5VO">
-                                <rect key="frame" x="83" y="106" width="233" height="211.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="177"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="🐕" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWG-iT-5VO">
+                                <rect key="frame" x="10" y="106" width="349" height="142"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -86,10 +86,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="b6P-nh-fXs"/>
                     </view>
+                    <connections>
+                        <outlet property="conceptLabel" destination="cWG-iT-5VO" id="qJu-jM-ccK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ta4-I1-Zb5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1476" y="-1163.568215892054"/>
+            <point key="canvasLocation" x="1156" y="-1163.568215892054"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KDq-n6-CPq">
