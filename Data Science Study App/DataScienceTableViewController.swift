@@ -21,7 +21,8 @@ class DataScienceTableViewController: UITableViewController {
                              "Supervised Learning",
                              "Unsupervised Learning",
                              "Deep Learning",
-                             "Model Validation"]
+                             "Model Validation",
+                             "Languages ]
 
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
